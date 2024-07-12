@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Message?"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextPrimary"/>
+    <TextView
+        android:id="@+id/textViewDeleteForEveryone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete For Everyone"
+        android:padding="10dp"
+        android:textAlignment="textEnd"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:id="@+id/textViewDeleteForMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAlignment="textEnd"
+        android:text="Delete For Me"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/textViewCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAlignment="textEnd"
+        android:text="Cancel"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>

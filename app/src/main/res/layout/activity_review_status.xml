@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReviewPhotoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        app:titleTextColor="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageButton
+                android:id="@+id/imageViewBackIcon"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="10"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_back_arrow" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:background="@android:color/transparent"
+                android:text="Add Status"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:background="@color/colorBlack"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jsibbold.zoomage.ZoomageView
+            android:id="@+id/zoomageViewPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/placeholder"
+            app:zoomage_animateOnReset="true"
+            app:zoomage_autoCenter="true"
+            app:zoomage_autoResetMode="UNDER"
+            app:zoomage_maxScale="8"
+            app:zoomage_minScale="0.6"
+            app:zoomage_restrictBounds="false"
+            app:zoomage_translatable="true"
+            app:zoomage_zoomable="true" />
+    </RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:src="@drawable/ic_send"
+        android:background="@drawable/background_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>

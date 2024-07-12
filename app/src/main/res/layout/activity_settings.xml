@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/colorWhite" >
+        <ImageView
+            android:id="@+id/imageViewBackIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/ic_back_arrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/userInfoSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="10dp"
+        android:background="@color/colorGray"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewUserProfilePicture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/default_avator" />
+
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="My Name"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewUserBio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="hey im using this app"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/sectionDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/userInfoSection"
+        android:background="@color/colorTextSecondary" />
+    <LinearLayout
+        android:layout_below="@+id/sectionDivider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <LinearLayout
+            android:id="@+id/settingsItem01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewAccountIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_account_box_24"
+                android:layout_marginEnd="10dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="2dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="privacy, security, change name or number"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settingsItem02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewChatsIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_chat"
+                android:layout_marginEnd="10dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chats"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="2dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Themes, Wallpapers, chat history"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/settingsItem03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewNotificationIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_notifications"
+                android:layout_marginEnd="10dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notifications"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="2dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="customize notifications"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/settingsItem04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewDataIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_data_usage_24"
+                android:layout_marginEnd="10dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data and storage usage"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="2dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="data and storage settings"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/settingsItem05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewHelpIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_help_center_24"
+                android:layout_marginEnd="10dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Help"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="2dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="need to get help?"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/settingsItem06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewInviteIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_invite"
+                android:layout_marginEnd="10dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invite others"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="2dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cant see your friend?"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

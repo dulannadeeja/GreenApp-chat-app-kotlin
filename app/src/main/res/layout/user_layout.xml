@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/userLayoutParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="4dp"
+    card_view:cardCornerRadius="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewUserProfilePicture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/default_avator"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp">
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="contact name"/>
+        <TextView
+            android:id="@+id/textViewUserBio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="14sp"
+            android:text="hey im using this app"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

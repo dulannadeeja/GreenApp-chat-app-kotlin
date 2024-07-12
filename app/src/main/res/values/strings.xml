@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Chat App</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="we_will_send_a_message_including_a_one_time_password_on_this_mobile_number">We will send a message including a one time password on this mobile number</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="_94">+94-</string>
+    <string name="_722146452">722146452</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="enter_the_otp_sent_to">Enter the OTP sent to</string>
+    <string name="_94722146452">+94722146452</string>
+    <string name="didn_t_received_the_otp">Didn\'t Received The OTP!</string>
+    <string name="resend_otp">RESEND OTP</string>
+    <string name="get_verified">Get Verified</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

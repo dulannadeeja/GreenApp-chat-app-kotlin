@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendOTPActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/send_otp"
+            android:contentDescription="@string/app_name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/otp_verification"
+            android:textColor="@color/colorTextPrimary"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextSecondary"
+            android:text="@string/we_will_send_a_message_including_a_one_time_password_on_this_mobile_number"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="14sp"
+            android:text="@string/enter_mobile_number"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/_94"
+                android:textColor="@color/colorTextPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/editTextMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:hint="@string/_722146452"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:maxLength="9"
+                android:inputType="number"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorTextSecondary"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/buttonSendOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/background_button"
+            android:text="@string/get_otp"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

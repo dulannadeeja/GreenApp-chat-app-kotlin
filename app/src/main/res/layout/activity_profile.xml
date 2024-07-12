@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/imageViewBackIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/ic_back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewProfilePicture"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_avator" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabUploadProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/imageViewProfilePicture"
+            android:layout_alignBottom="@+id/imageViewProfilePicture"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_add_a_photo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_round_person_pin_24"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/textViewUserName"
+                    android:layout_marginBottom="4dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username" />
+
+                <TextView
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="this is the name which will appear with your profile." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/buttonEditName"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_round_edit_24" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorGray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_round_info_24" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Info" />
+
+                <TextView
+                    android:id="@+id/textViewInfo"
+                    android:layout_marginBottom="4dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available" />
+
+                <TextView
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="this is the Bio which will shows to others." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/buttonEditInfo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_round_edit_24" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorGray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_settings_phone_24"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone" />
+
+                <TextView
+                    android:id="@+id/textViewPhone"
+                    android:layout_marginBottom="4dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="94722146452" />
+
+                <TextView
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="this is the number assosiated with your account." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/buttonEditPhone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_round_edit_24" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorGray"/>
+        <Button
+            android:id="@+id/buttonSignout"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign out"/>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

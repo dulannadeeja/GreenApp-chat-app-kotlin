@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePictureActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/colorWhite">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <ImageButton
+                android:layout_weight="10"
+                android:id="@+id/imageViewBackIcon"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_back_arrow"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:layout_weight="70"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Profile Picture"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"/>
+            <ImageButton
+                android:layout_weight="10"
+                android:id="@+id/imageViewEditIcon"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_round_edit_24"
+                app:tint="@color/colorWhite"
+                android:background="@android:color/transparent"/>
+            <ImageButton
+                android:layout_weight="10"
+                android:id="@+id/imageViewShareIcon"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_baseline_share_24"
+                app:tint="@color/colorWhite"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:background="@color/colorBlack"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jsibbold.zoomage.ZoomageView
+            android:id="@+id/zoomageViewProfilePicture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/placeholder"
+            app:zoomage_animateOnReset="true"
+            app:zoomage_autoCenter="true"
+            app:zoomage_autoResetMode="UNDER"
+            app:zoomage_maxScale="8"
+            app:zoomage_minScale="0.6"
+            app:zoomage_restrictBounds="false"
+            app:zoomage_translatable="true"
+            app:zoomage_zoomable="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="13dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:id="@+id/loader"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="15dp" />
+        <TextView
+            android:id="@+id/loading_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toEndOf="@+id/loader"
+            android:gravity="center"
+            android:text="Do you want to sign out?"
+            android:textAppearance="?android:textAppearanceSmall" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonNo"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+        <Button
+            android:id="@+id/buttonYes"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign out"/>
+    </LinearLayout>
+
+</LinearLayout>
