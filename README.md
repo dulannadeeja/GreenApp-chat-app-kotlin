@@ -1,14 +1,11 @@
 # GreenApp - chat app using kotlin and firebase
-“GreenApp” is an android chat app that is implemented by using Kotlin and Firebase.
-
-# GREEN APP
 
 ## Introduction
 
 We introduce "GREEN APP," a real-time chat application designed for the university system. GREEN APP allows students to connect with new peers through texting. It is an Android application implemented using Kotlin, and Firebase. Students can chat with others and share their experiences through this app.
 
 ## Features of the System
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 - **Chat App Message Interface**: An interactive messaging interface to enhance user interaction.
 - **Messaging and Sharing**: Users can exchange text messages and share images.
 - **Login**: Users log in using their personal mobile number and an OTP.
